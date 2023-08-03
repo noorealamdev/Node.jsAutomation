@@ -4,15 +4,17 @@ const seconds = [20000, 30000, 40000, 50000, 60000];
 const random = Math.floor(Math.random() * seconds.length);
 
 while (1===1) {
-    robot.moveMouse(407, 841);
+    // Visual studio code editor
+    robot.moveMouse(390, 840);
     robot.mouseClick();
-    robot.moveMouse(407, 400);
+    robot.moveMouse(480, 130);
     robot.keyTap('down');
     robot.setKeyboardDelay(seconds[random]);
 
-    robot.moveMouse(459, 841);
+    // Mozilla firefox browser
+    robot.moveMouse(430, 840);
     robot.mouseClick();
-    robot.moveMouse(459, 400);
+    robot.moveMouse(740, 240);
     robot.keyTap('down');
     robot.setKeyboardDelay(seconds[random]);
 }
